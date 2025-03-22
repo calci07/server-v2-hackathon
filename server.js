@@ -1,5 +1,4 @@
 // server.js (Backend)
-require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const fetch = require("node-fetch");
@@ -9,7 +8,7 @@ const path = require("path");
 const app = express();
 const PORT = 5001;
 const SOS_FILE = path.join(__dirname, "sos_data.json");
-const ALERTO_API_KEY = process.env.ALTERTO_API_KEY || "your-api-key-here";
+const ALERTO_API_KEY = "19f7634e-4577-4536-a036-763aa8a62edb";
 const ALERTO_API_URL = "https://alertobuilders.net/api/incidents";
 
 app.use(express.json());
